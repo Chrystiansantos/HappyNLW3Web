@@ -40,13 +40,15 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "settings": {
-      "import/resolver": {
-        "typescript": {}
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
       }
-    },
-    "no-use-before-define": "off",
-    "prettier/prettier": "error"
+    ],
+    "no-use-before-define": "off"
   },
   "settings": {
     "import/resolver": {
